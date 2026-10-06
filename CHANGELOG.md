@@ -2,18 +2,19 @@
 
 Todos los cambios relevantes de este proyecto se documentan en este archivo.
 
-El formato sigue [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/)
-y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
+El formato sigue [Keep a Changelog](https://keepachangelog.com)
+y el proyecto usa [Versionado Semántico](https://semver.org).
 
 ## [Unreleased]
 
 ### Added
+- Added de la sección unreleased, justo debajo del encabezado.
 
 ### Changed
 
 ### Fixed
 
-## [1.0.0] - 2026-10-01
+## - 2026-10-01
 
 ### Added
 - Catálogo de productos (`products`, `findProductBySku`, `searchProducts`).
