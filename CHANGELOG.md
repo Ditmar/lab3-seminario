@@ -8,6 +8,9 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 ## [Unreleased]
 
 ### Added
+- Añade códigos de descuento SAVE10, SAVE20 y BLACKFRIDAY.
+- Agrega el cálculo opcional del IVA del 13 % al total del carrito mediante `includeTax`.
+- Soporte para conversión y formateo de monedas (BOB, USD, EUR).
 
 ### Changed
 
