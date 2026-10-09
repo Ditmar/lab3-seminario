@@ -8,6 +8,8 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 ## [Unreleased]
 
 ### Added
+- Códigos de descuento SAVE10, SAVE20 y BLACKFRIDAY aplicables al total del carrito.
+- Cálculo y adición de impuesto IVA del 13% (`TAX_RATE`, `calculateTax`, `addTax`, opción `includeTax`).
 
 ### Changed
 
