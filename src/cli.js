@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { products, searchProducts, formatPrice } from './index.js';
+import { products, searchProducts, formatPrice, buildReceipt } from './index.js';
 
 const commands = {
   list() {
@@ -20,6 +20,25 @@ const commands = {
   },
 
   // Los comandos nuevos se registran debajo de esta línea
+receipt(...entries) {
+  const items = entries.map((entry) => {
+    const [sku, quantityText] = entry.split(':');
+    const product = products.find((p) => p.sku === sku);
+    const quantity = Number(quantityText);
+
+    if (!product || !Number.isInteger(quantity) || quantity <= 0) {
+      throw new Error(`Producto o cantidad inválida: ${entry}`);
+    }
+
+    return {
+      name: product.name,
+      price: product.price,
+      quantity,
+    };
+  });
+
+  console.log(buildReceipt(items));
+},
 };
 
 const [, , name, ...args] = process.argv;
