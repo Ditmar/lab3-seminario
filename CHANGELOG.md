@@ -8,8 +8,11 @@ y el proyecto usa [Versionado Semántico](https://semver.org/lang/es/).
 ## [Unreleased]
 
 ### Added
+- Aplicación de descuentos mediante códigos promocionales.
+- Generación de recibos con productos, cantidades y total de compra.
 
 ### Changed
+- Formato de precios con ancho configurable para mejorar la presentación del recibo.
 
 ### Fixed
 
