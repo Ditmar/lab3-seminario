@@ -20,3 +20,7 @@ test('searchProducts encuentra productos por parte del nombre', () => {
 test('el catálogo tiene productos', () => {
   assert.ok(products.length > 0);
 });
+
+test('searchProducts ignora mayúsculas y minúsculas', () => {
+  assert.equal(searchProducts('laptop').length, 1);
+});
